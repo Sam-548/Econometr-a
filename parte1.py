@@ -157,7 +157,7 @@ if(modelo_nvda$correlacion > 0.7) {
 } else {
   cat("• Interpretación: Correlación DÉBIL y positiva")
 }""")
-        st.image("/Users/sam/Desktop/eco.py/Rplot.png", use_container_width=True)
+        st.image("Rplot.png", use_container_width=True)
 
     # 1.5 
     st.markdown("# <span style='color:yellow'>💵 Punto 1.5</span>", unsafe_allow_html=True)
@@ -211,7 +211,7 @@ cat("• Cualquier incremento en el mercado ",
         st.markdown("##### • Justificación: p-valor < 0.05 indica diferencia significativa")
         st.markdown("##### <span style='color:#FF8C00'>• Cualquier incremento en el mercado NO genera el mismo incremento en Intel (INTC)</span>", unsafe_allow_html=True)
     with col1:
-        st.image("/Users/sam/Desktop/eco.py/intel.png", use_container_width=True)
+        st.image("intel.png", use_container_width=True)
     
     col1, col2 = st.columns(2)
     with col2:
