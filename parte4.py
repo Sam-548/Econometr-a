@@ -18,7 +18,7 @@ grafico_dispersion <- ggplot(datos, aes(x = Valor_Tasado, y = Valor_Mercado)) +
 """)
     col1, col2 = st.columns([2, 1])
     with col1:
-        st.image("/Users/sam/Desktop/eco.py/graphdisper.png", use_container_width=True)
+        st.image("graphdisper.png", use_container_width=True)
     with col2:
         st.markdown("### Se observa una relación lineal positiva entre las variables.")
         st.markdown("### Los puntos se distribuyen alrededor de una línea recta ascendente.")
@@ -37,7 +37,7 @@ cat("Valor_Mercado =", round(intercepto, 4), "+", round(pendiente, 4), "* Valor_
 """)
     col1, col2 = st.columns([2, 1])
     with col1:
-        st.image("/Users/sam/Desktop/eco.py/modregr.png", use_container_width=True)
+        st.image("modregr.png", use_container_width=True)
     with col2:
         st.markdown("##### Intercepto (β₀ = 116.7475): representa el valor de mercado estimado cuando el valor tasado es 0, interpretado como un valor base del terreno.")
         st.markdown("##### Pendiente (β₁ = 0.5327): por cada 1,000 dólares en el valor tasado, el valor de mercado aumenta en promedio **532.7 dólares**.")
@@ -219,7 +219,7 @@ cat("Valores atípicos detectados:", valores_atipicos)
 """)
     col1, col2 = st.columns([2,1])
     with col1:
-        st.image("/Users/sam/Desktop/eco.py/punto11.png", use_container_width=True)
+        st.image("punto11.png", use_container_width=True)
     with col2:
         st.markdown("### Se encontraron **2 valores atípicos**.")
         st.markdown("### Se incorporaron al modelo mediante las variables dummy **Dummy_26** y **Dummy_52**.")
